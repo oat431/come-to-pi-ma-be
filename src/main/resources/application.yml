@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: development
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    operations-sorter: method
+    path: /swagger
+    syntax-highlight:
+      theme: monokai
+      activated: true
+    try-it-out-enabled: true
+    tags-sorter: alpha
+    filter: true
