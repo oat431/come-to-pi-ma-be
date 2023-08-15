@@ -31,7 +31,6 @@ dependencies {
     // database and database boilerplate
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-validation:3.1.0'
-    implementation 'org.testng:testng:7.1.0'
     runtimeOnly 'org.postgresql:postgresql'
     compileOnly 'org.hibernate.orm:hibernate-jpamodelgen:6.2.3.Final'
 

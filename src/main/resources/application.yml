@@ -1,7 +1,19 @@
 spring:
   profiles:
     active: development
-
+  application:
+    name: "Come To Pi Ma"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cometopima?createDatabaseIfNotExist=true&autoReconnect=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
 springdoc:
   api-docs:
     path: /api-docs
@@ -14,3 +26,7 @@ springdoc:
     try-it-out-enabled: true
     tags-sorter: alpha
     filter: true
+
+# secondary port
+server:
+  port: 5000
