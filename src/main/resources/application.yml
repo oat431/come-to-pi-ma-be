@@ -27,6 +27,10 @@ springdoc:
     tags-sorter: alpha
     filter: true
 
+jwt:
+  header: Authorization
+  secret: 10d83c11e564b729664269d79ce3e701b6218e06ec1aa4e104de87e6dc0a1288
+
 # secondary port
 server:
   port: 5000
