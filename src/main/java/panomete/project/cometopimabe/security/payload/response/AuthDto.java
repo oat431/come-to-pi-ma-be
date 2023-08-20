@@ -1,5 +1,7 @@
 package panomete.project.cometopimabe.security.payload.response;
 
+import java.util.List;
+
 public record AuthDto (
     String id,
     String profilePicture,
@@ -10,5 +12,5 @@ public record AuthDto (
     Integer age,
     String email,
     LocationDto location,
-    String role
+    List<String> roles
 ) { }

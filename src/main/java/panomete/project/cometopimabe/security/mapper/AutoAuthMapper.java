@@ -17,7 +17,7 @@ public interface AutoAuthMapper {
             @Mapping(target = "id", expression = "java(user.getUserId())"),
             @Mapping(target = "age", expression = "java(user.getAge())"),
             @Mapping(target = "name", expression = "java(user.getFullName())"),
-            @Mapping(target = "role", expression = "java(user.getSimpleAuthorities())")
+            @Mapping(target = "roles", expression = "java(user.getSimpleAuthorities())")
     })
     AuthDto toAuthDto(Users user);
     List<AuthDto> toAuthDto(List<Users> user);

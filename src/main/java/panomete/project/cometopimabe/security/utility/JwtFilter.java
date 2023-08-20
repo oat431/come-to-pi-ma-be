@@ -11,8 +11,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.filter.OncePerRequestFilter;
-import panomete.judsue.security.service.AuthService;
 import panomete.project.cometopimabe.security.entity.Users;
+import panomete.project.cometopimabe.security.service.AuthService;
 
 import java.io.IOException;
 

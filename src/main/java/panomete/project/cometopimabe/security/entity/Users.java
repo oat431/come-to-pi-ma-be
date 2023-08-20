@@ -69,8 +69,8 @@ public class Users implements UserDetails, Serializable {
                 .toList();
     }
 
-    public List<Authorities> getSimpleAuthorities() {
-        return this.authorities;
+    public List<String> getSimpleAuthorities() {
+        return this.authorities.stream().map(authorities -> authorities.getName().name()).toList();
     }
 
     public Integer getAge() {

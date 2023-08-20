@@ -132,7 +132,7 @@ public class AuthController {
         );
     }
 
-    @PutMapping("/")
+    @PutMapping
     @SecurityRequirement(name = "Bearer Authentication")
     @Operation(summary = "Update user details", description = "Update user details")
     public ResponseEntity<AuthDto> updateUserDetails(@RequestBody UpdateRequest update) {

@@ -27,7 +27,6 @@ public class JwtTokenUtil implements Serializable {
     @Value("${jwt.secret}")
     private String SECRET;
 
-    private final Key key = new SecretKeySpec(SECRET.getBytes(), SignatureAlgorithm.HS512.getJcaName());
 
     public String generateJWT(Users user, Long expiration) {
         Map<String,Object> claims = new HashMap<>();
@@ -45,6 +44,7 @@ public class JwtTokenUtil implements Serializable {
     }
 
     public String generateToken(Map<String, Object> claims, Long expiration){
+        final Key key = new SecretKeySpec(SECRET.getBytes(), SignatureAlgorithm.HS512.getJcaName());
         return Jwts.builder()
                 .setClaims(claims)
                 .signWith(key, SignatureAlgorithm.HS512)
@@ -53,6 +53,7 @@ public class JwtTokenUtil implements Serializable {
     }
 
     public Claims getClaimsFromToken(String token) {
+        final Key key = new SecretKeySpec(SECRET.getBytes(), SignatureAlgorithm.HS512.getJcaName());
         return Jwts.parserBuilder()
                 .setSigningKey(key)
                 .build()

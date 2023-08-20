@@ -10,7 +10,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     properties:
       hibernate:
         format_sql: true
@@ -28,8 +28,7 @@ springdoc:
     filter: true
 
 jwt:
-  header: Authorization
-  secret: 10d83c11e564b729664269d79ce3e701b6218e06ec1aa4e104de87e6dc0a1288
+  secret: F-JaNdRgUkXp2s5v8y/B?E(G+KbPeShVmYq3t6w9z$C&F)J@McQfTjWnZr4u7x!A
 
 # secondary port
 server:
