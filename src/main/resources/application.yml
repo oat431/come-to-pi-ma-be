@@ -4,13 +4,13 @@ spring:
   application:
     name: "Come To Pi Ma"
   datasource:
-    url: jdbc:postgresql://localhost:5432/cometopima?createDatabaseIfNotExist=true&autoReconnect=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:postgresql://localhost:5432/cometopima2?createDatabaseIfNotExist=true&autoReconnect=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: true
@@ -30,6 +30,7 @@ springdoc:
 jwt:
   secret: F-JaNdRgUkXp2s5v8y/B?E(G+KbPeShVmYq3t6w9z$C&F)J@McQfTjWnZr4u7x!A
 
+
 # secondary port
-server:
-  port: 5000
+#server:
+#  port: 5000
