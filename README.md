@@ -1,10 +1,11 @@
 # Employee Learning System by project and company course
 
-- [ ] Jwt Authentication System
+- [x] Jwt Authentication System
 - [ ] Mentor System
 - [ ] Employee System
 - [ ] Admin System
 - [ ] Course System
+- [ ] Exam System
 - [ ] Project System
 - [ ] Feed Back System
 
