@@ -13,7 +13,14 @@ version = '0.1-PROTOTYPE'
 java {
     sourceCompatibility = '17'
 }
-
+sonar {
+    properties {
+        property "sonar.projectKey", "come-to-pi-ma"
+        property "sonar.projectName", "come-to-pi-ma"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.token", "sqp_4b60581355f160645e4109c0ae795b3a5cce8371"
+    }
+}
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
