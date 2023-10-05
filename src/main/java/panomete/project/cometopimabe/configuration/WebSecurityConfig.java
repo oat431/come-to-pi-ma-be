@@ -43,6 +43,7 @@ public class WebSecurityConfig {
 
     private static final String[] FREE_AREA = {
             "/api-docs/**",
+            "/swagger",
             "/swagger-ui/**",
             "/swagger-ui.html",
             "/swagger-resources",

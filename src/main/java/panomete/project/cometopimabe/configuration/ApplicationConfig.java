@@ -12,7 +12,6 @@ import panomete.project.cometopimabe.security.repository.AuthoritiesRepository;
 import java.util.List;
 
 @Slf4j
-@Component
 @RequiredArgsConstructor
 public class ApplicationConfig implements ApplicationListener<ApplicationReadyEvent> {
     final AuthoritiesRepository authoritiesRepository;
